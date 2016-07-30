@@ -1,0 +1,18 @@
+[INFO]
+Description="Plays song from soundcloud"
+Var_A_Tab="Song Link List"
+Var_B_Tab="Referer (Optional)"
+Var_B_Text="http://facebook.com\r\nhttp://twitter.com\r\nhttp://pinterest.com"
+[/INFO]
+
+
+$url=get_random_line("$var_a")
+
+$referer=get_random_line("$var_b")
+referer("$referer")
+
+navigate("$url")
+
+sleep(3)
+
+button("title","Play","click")
