@@ -1,14 +1,16 @@
 [INFO]
 Description="Visit URL"
-Var_A_Tab="URL List"
-Var_B_Tab="Referer (Optional)"
-Var_B_Text="http://facebook.com\r\nhttp://twitter.com\r\nhttp://pinterest.com"
+Var_A_Tab="Instructions"
+Var_A_Text="Insert any number of urls you want to be visited in the URL List Tab"
+Var_B_Tab="URL List"
+Var_C_Tab="Referer (Optional)"
+Var_C_Text="http://facebook.com\r\nhttp://twitter.com\r\nhttp://pinterest.com"
 [/INFO]
 
 
-$url=get_random_line("$var_a")
+$url=get_random_line("$var_b")
 
-$referer=get_random_line("$var_b")
+$referer=get_random_line("$var_c")
 referer("$referer")
 
 navigate("$url")
