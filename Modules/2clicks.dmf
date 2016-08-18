@@ -1,16 +1,23 @@
 [INFO]
-Description="Visit URL"
-Var_A_Tab="Instructions"
-Var_A_Text="Insert any number of urls you want to be visited in the URL List Tab\r\nOne URL per line"
-Var_B_Tab="URL List"
-Var_C_Tab="Referer (Optional)"
-Var_C_Text="http://facebook.com\r\nhttp://twitter.com\r\nhttp://pinterest.com"
+Description="Visit URL and Click in 2 URL"
+Var_A_Tab="URL List"
+Var_B_Tab="Referer (Optional)"
+Var_B_Text="http://facebook.com\r\nhttp://twitter.com\r\nhttp://pinterest.com"
+Var_C_Tab="First Click URL"
+Var_D_Tab="Second Click URL"
 [/INFO]
 
 
-$url=get_random_line("$var_b")
+$url=get_random_line("$var_a")
 
-$referer=get_random_line("$var_c")
+$referer=get_random_line("$var_b")
 referer("$referer")
 
 navigate("$url")
+sleep({10|11|12|13|14|15})
+
+A("href","$var_c","Click")
+
+sleep({10|11|12|13|14|15})
+
+A("href","$var_d","Click")
