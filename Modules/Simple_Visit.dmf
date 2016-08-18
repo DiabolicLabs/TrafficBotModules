@@ -1,7 +1,7 @@
 [INFO]
 Description="Visit URL"
 Var_A_Tab="Instructions"
-Var_A_Text="Insert any number of urls you want to be visited in the URL List Tab"
+Var_A_Text="Insert any number of urls you want to be visited in the URL List Tab\r\nOne URL per line"
 Var_B_Tab="URL List"
 Var_C_Tab="Referer (Optional)"
 Var_C_Text="http://facebook.com\r\nhttp://twitter.com\r\nhttp://pinterest.com"
