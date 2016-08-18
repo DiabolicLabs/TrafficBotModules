@@ -1,0 +1,19 @@
+[INFO]
+Description="Click Next in adf.ly URL"
+Var_A_Tab="Instructions"
+Var_A_Text="Insert any number of adf.ly URLs you want in tab <adf.ly URL List>\r\nAdd at least 50 seconds in the minimum time to run the module so it have enought time to load all the page\r\n\r\n*Running this module may get the adf.ly account banned"
+Var_C_Tab="adf.ly URL List"
+Var_D_Tab="Referer"
+Var_D_Text="http://facebook.com\r\nhttp://twitter.com\r\nhttp://pinterest.com\r\nhttp://reddit.com"
+[/INFO]
+
+
+$url=get_random_line("$var_b")
+
+$referer=get_random_line("$var_c")
+referer("$referer")
+
+navigate("$url")
+Sleep("{10|12|14|16|18}")
+
+img("id","skip_ad_button","click")
