@@ -1,0 +1,29 @@
+[INFO]
+Description="Search Amazon and click the product"
+Var_A_Tab="Instructions"
+Var_A_Text="Insert the keywords you want to search in amazon in <Search Terms> Tab\r\nInsert the exact title of the link you want to be clicked after the search in <Product Title> Tab\r\nThis module can be very slow to run, is better you have more than 100 seconds in the minimum time to run\r\n\r\n*this module uses the amazon.co.uk if you want to change it you need to edit the module source directly"
+
+Var_B_Tab="Search Terms"
+Var_C_Tab="Product Title"
+[/INFO]
+
+$search_term=get_random_line("$var_b")
+$LinkTitle=get_random_line("$var_c")
+
+navigate("amazon.co.uk")
+input("id","twotabsearchtextbox","value","$search_term")
+input("value","Go","click")
+
+
+SearchLink:
+sleep(5)
+$link=a("title","$LinkTitle","click")
+
+if_1("$link"~="http")
+sleep(60)
+exit()
+end_if_1
+
+
+a("title","Next Page","click")
+goto("SearchLink")
