@@ -2,9 +2,9 @@
 Description="Click Next in adf.ly URL"
 Var_A_Tab="Instructions"
 Var_A_Text="Insert any number of adf.ly URLs you want in tab <adf.ly URL List>\r\nAdd at least 50 seconds in the minimum time to run the module so it have enought time to load all the page\r\n\r\n*Running this module may get the adf.ly account banned"
-Var_C_Tab="adf.ly URL List"
-Var_D_Tab="Referer"
-Var_D_Text="http://facebook.com\r\nhttp://twitter.com\r\nhttp://pinterest.com\r\nhttp://reddit.com"
+Var_B_Tab="adf.ly URL List"
+Var_C_Tab="Referer"
+Var_C_Text="http://facebook.com\r\nhttp://twitter.com\r\nhttp://pinterest.com\r\nhttp://reddit.com"
 [/INFO]
 
 
