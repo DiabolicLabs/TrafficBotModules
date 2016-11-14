@@ -1,0 +1,27 @@
+[INFO]
+Description="Click Next in link.tl URL"
+Var_A_Tab="Instructions"
+Var_A_Text="Insert any number of link.tl URLs you want in tab <bc.vc URL List>\r\nAdd at least 50 seconds in the minimum time to run the module so it have enought time to load all the page\r\n\r\n*Running this module may get the bc.vc account banned"
+Var_B_Tab="link.tl URL List"
+Var_C_Tab="Referer"
+Var_C_Text="http://facebook.com\r\nhttp://twitter.com\r\nhttp://pinterest.com"
+[/INFO]
+
+
+$url=get_random_line("$var_b")
+
+$referer=get_random_line("$var_c")
+referer("$referer")
+
+navigate("$url")
+Sleep("{10|12|14|16|18}")
+
+div("class","skip_btn2","click")
+Sleep("{10|12|14|16|18}")
+div("class","skip_btn2","click")
+Sleep("{10|12|14|16|18}")
+div("class","skip_btn2","click")
+Sleep("{10|12|14|16|18}")
+div("class","skip_btn2","click")
+Sleep("{10|12|14|16|18}")
+div("class","skip_btn2","click")
