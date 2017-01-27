@@ -14,3 +14,4 @@ $referer=get_random_line("$var_c")
 referer("$referer")
 
 navigate("$url")
+random_scroll()
