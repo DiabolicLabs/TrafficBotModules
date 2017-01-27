@@ -17,3 +17,5 @@ navigate("$url")
 sleep({3|6|9|12})
 
 random_click()
+sleep({3|6|9|12})
+random_scroll()
