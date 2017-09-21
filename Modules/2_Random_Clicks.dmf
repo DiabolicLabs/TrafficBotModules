@@ -1,0 +1,27 @@
+[INFO]
+Description="Visit URL and perform 2 random clicks"
+Var_A_Tab="URL List"
+Var_B_Tab="Referer (Optional)"
+Var_B_Text="http://facebook.com\r\nhttp://twitter.com\r\nhttp://pinterest.com"
+[/INFO]
+
+
+$url=get_random_line("$var_a")
+
+$referer=get_random_line("$var_b")
+referer("$referer")
+
+navigate("$url")
+
+//You can change all the sleep values
+sleep({3|6|9|12})
+
+random_click()
+sleep({3|6|9|12})
+random_scroll()
+
+sleep({3|6|9|12})
+
+random_click()
+sleep({3|6|9|12})
+random_scroll()
