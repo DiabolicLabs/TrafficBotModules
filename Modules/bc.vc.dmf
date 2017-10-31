@@ -16,4 +16,4 @@ referer("$referer")
 navigate("$url")
 Sleep("{10|12|14|16|18}")
 
-A("id","skip_btn","click")
+javascript("document.getElementById('skip_btt').click();")
