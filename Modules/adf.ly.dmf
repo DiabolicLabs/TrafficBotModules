@@ -16,4 +16,4 @@ referer("$referer")
 navigate("$url")
 Sleep("{10|12|14|16|18}")
 
-img("id","skip_ad_button","click")
+img("alt","Skip Ad","click")
