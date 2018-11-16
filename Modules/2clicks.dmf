@@ -2,7 +2,7 @@
 Description="Visit URL and Click in 2 URL"
 Var_A_Tab="URL List"
 Var_B_Tab="Referer (Optional)"
-Var_B_Text="http://facebook.com\r\nhttp://twitter.com\r\nhttp://pinterest.com"
+Var_B_Text="https://facebook.com\r\nhttps://twitter.com\r\nhttps://pinterest.com"
 Var_C_Tab="First Click URL"
 Var_D_Tab="Second Click URL"
 [/INFO]
