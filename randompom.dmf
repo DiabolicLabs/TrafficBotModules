@@ -1,0 +1,24 @@
+[INFO]
+Description="Visit URL and click a random link"
+Meta name="keywords" content="Porn, xxx, Porn Movies, X Movies, Online Porn Movies, Free Porn Movies, Free Porn Movies, Free Porn Movies, JAV Videos" 
+Var_B_Tab="Referer (Optional)"
+Var_B_Text="https://facebook.com\r\nhttps://twitter.com\r\nhttps://pinterest.com"
+[/INFO]
+
+
+$url=get_random_line("$var_a")
+
+$referer=get_random_line("$var_b")
+referer("$referer")
+
+navigate("$url")
+
+//You can change all the sleep values
+sleep({3|6|9|12})
+
+random_click()
+sleep({3|6|9|12})
+random_scroll()
+
+random_info("$tag_name","$attribute_name")
+random_info("$tag_name","$attribute_name","$attribute_value")
