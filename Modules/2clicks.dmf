@@ -9,6 +9,8 @@ Var_D_Tab="Second Click URL"
 
 
 $url=get_random_line("$var_a")
+$firstClick=get_random_line("$var_c")
+$secondClick=get_random_line("$var_d")
 
 $referer=get_random_line("$var_b")
 referer("$referer")
@@ -16,8 +18,8 @@ referer("$referer")
 navigate("$url")
 sleep({10|11|12|13|14|15})
 
-A("href","$var_c","Click")
+A("href","$firstClick","Click")
 
 sleep({10|11|12|13|14|15})
 
-A("href","$var_d","Click")
+A("href","$secondClick","Click")
