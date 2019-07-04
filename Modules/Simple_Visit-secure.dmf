@@ -1,0 +1,17 @@
+[INFO]
+Description="Visit URL"
+Var_A_Tab="Instructions"
+Var_A_Text="Insert any number of urls you want to be visited in the URL List Tab\r\nOne URL per line"
+Var_B_Tab="URL List"
+Var_C_Tab="Referer (Optional)"
+Var_C_Text="https://facebook.com\r\nhttps://twitter.com\r\nhttps://pinterest.com"
+[/INFO]
+
+
+$url=get_random_line("$var_b")
+
+$referer=get_random_line("$var_c")
+referer("$referer")
+
+navigate("$url")
+random_scroll()
